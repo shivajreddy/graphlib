@@ -6,9 +6,21 @@ template <typename T> T add(T a, T b) {
     return a + b;
 }
 
+template <typename T> class Node {
+public:
+    Node(int v, T t) {
+    }
+};
+
+class Graph {
+private:
+    int x;
+
+public:
+    Graph() {
+    }
+};
+
 int main() {
-    int res1 = add(5, 3);        // T is int
-    double res2 = add(2.5, 1.7); // T is double
-    cout << res1 << " " << res2 << endl;
-    return 0;
+    Node n = Node<int>(10, 21);
 }
