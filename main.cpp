@@ -2,11 +2,15 @@
 
 using namespace std;
 
-template <typename T> T add(T a, T b) {
+template <typename T>
+
+T add(T a, T b) {
     return a + b;
 }
 
-template <typename T> class Node {
+template <typename T>
+
+class Node {
 public:
     Node(int v, T t) {
     }
@@ -22,5 +26,7 @@ public:
 };
 
 int main() {
+    // +
     Node n = Node<int>(10, 21);
+    cout << "hello there" << endl;
 }
