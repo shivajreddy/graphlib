@@ -1,3 +1,4 @@
+#include "graph.cpp"
 #include <bits/stdc++.h>
 
 using namespace std;
@@ -29,4 +30,5 @@ int main() {
     // +
     Node n = Node<int>(10, 21);
     cout << "hello there" << endl;
+    Graph t = Graph();
 }
