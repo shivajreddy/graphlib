@@ -1,34 +1,9 @@
 #include "graph.cpp"
-#include <bits/stdc++.h>
-
-using namespace std;
-
-template <typename T>
-
-T add(T a, T b) {
-    return a + b;
-}
-
-template <typename T>
-
-class Node {
-public:
-    Node(int v, T t) {
-    }
-};
-
-class Graph {
-private:
-    int x;
-
-public:
-    Graph() {
-    }
-};
 
 int main() {
-    // +
-    Node n = Node<int>(10, 21);
-    cout << "hello there" << endl;
-    Graph t = Graph();
+    cout << "CREATING" << endl;
+    vector<pair<int, int>> edges = { { 1, 2 }, { 1, 3 }, { 2, 4 } };
+    UnDirectedGraph ug = UnDirectedGraph(4, edges);
+    ug.export_graphviz("t1.dot");
+    cout << "DONE" << endl;
 }
